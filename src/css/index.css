@@ -1,0 +1,56 @@
+/* global variables
+   ========================================================================== */
+:root {
+  --clr-0: #e7f6f2;
+  --clr-1: #a5c9ca;
+  --clr-2: #395b64;
+  --clr-3: #2c3333;
+
+  --size-1: 1rem;
+
+  --pri-transition: all 250ms ease;
+  --pri-padding: var(--size-1);
+  --pri-brd-rad: 5px;
+
+  background-color: var(--clr-0);
+  color: var(--clr-3);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+}
+
+/* print
+   ========================================================================== */
+body {
+  -webkit-print-color-adjust: exact !important;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+@media print {
+  header {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  @page {
+    size: auto;
+    margin: 0;
+  }
+
+  #root {
+    width: 800px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .profile {
+    background-color: var(--clr-3);
+    color: var(--clr-0);
+  }
+}
